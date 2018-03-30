@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Guess Number</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<header class="header">
+		<h1>Number <span>Guesser</span></h1>
+	</header>
+
+	<div class="menu display column">
+		<div class="display">
+			<h2>Choose a Level</h2>
+		</div>
+		<a href="#block" class="level1Box display">
+			<div class="level1">Level 1</div>
+		</a>
+		<a href="#block" class="level2Box display">
+			<div class="level2">Level 2</div>
+		</a>
+		<a href="#block" class="level3Box display">
+			<div class="level3">Level 3</div>
+		</a>
+		<a href="#block" class="level4Box display">
+			<div class="level4">Level 4</div>
+		</a>
+		<a href="#block" class="level5Box display">
+			<div class="level5">Level 5</div>
+		</a>
+	</div>
+
+	<div id="block" class="block display column">
+		<i>Between <span class="deb"></span> and <span class="fin"></span></i>
+		<div class="inputContainer display"><input class="inputBox" type="text" placeholder="Enter your guess"></div>
+
+		<div class="middleContainer display">
+			<span class="button btnGuess">Guess</span>
+			<span class="button btnClear">Clear</span>
+		</div>
+
+		<div class="output display column">
+			<p class="beforeOutputNumber">Your last guest was <span class="lastGuessBox"></span></p>
+			<p class="outputNumber"></p>
+			<p class="indiceBox"></p>
+		</div>
+
+		<div class="resetContainer display"><span class="button btnReset">Reset</span></div>
+	</div>
+
+
+
+
+    
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>   
+<script type="text/javascript" src="main.js"></script>
+</body>
+</html>

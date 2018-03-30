@@ -1,0 +1,106 @@
+@font-face {
+  font-family: "open_sans_bold";
+  src: url("fonts/OpenSans-Bold.ttf") format("ttf"); }
+@font-face {
+  font-family: "open_sans_extra_bold";
+  src: url("fonts/OpenSans-ExtraBold.ttf") format("ttf"); }
+@font-face {
+  font-family: "open_sans_light";
+  src: url("fonts/OpenSans-Light.ttf") format("ttf"); }
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth; }
+
+.button {
+  border-radius: 100px;
+  background-color: #929497;
+  border: 1px solid #929497;
+  color: #fff;
+  font-size: 1.5em; }
+
+.button:hover {
+  background-color: #eb008b;
+  border: 1px solid #eb008b;
+  color: #fff; }
+
+.display {
+  display: flex; }
+
+.column {
+  flex-direction: column; }
+
+body {
+  text-align: center; }
+  body header {
+    width: 100%;
+    background-color: #404041;
+    position: fixed; }
+    body header h1 {
+      color: #ed458b;
+      font-size: 4em;
+      font-weight: 500; }
+      body header h1 span {
+        color: #fff;
+        font-weight: 100; }
+  body .menu {
+    width: 100vw;
+    height: 100vh;
+    padding-top: 10%;
+    background-color: #404041;
+    color: #fff;
+    font-size: 1.5em; }
+    body .menu a {
+      color: #fff; }
+    body .menu .display {
+      flex: 1; }
+    body .menu .display:hover {
+      color: #eb008b; }
+    body .menu .display h2 {
+      color: #929497; }
+    body .menu .display h2, body .menu .display div {
+      margin: auto; }
+  body .block {
+    margin-top: 50px;
+    height: 75vh; }
+    body .block .inputContainer {
+      flex: 1; }
+      body .block .inputContainer input {
+        text-align: center;
+        color: #B8BABC;
+        font-size: 1.5em;
+        border: 2px solid #B8BABC;
+        border-radius: 3px;
+        width: 45%;
+        height: 60%;
+        margin: auto; }
+    body .block .middleContainer {
+      flex: 1; }
+      body .block .middleContainer .btnGuess {
+        margin: auto;
+        margin-right: 20px;
+        width: 20%; }
+      body .block .middleContainer .btnClear {
+        margin: auto;
+        margin-left: 20px;
+        width: 20%; }
+    body .block .output {
+      flex: 5; }
+      body .block .output .beforeOutputNumber {
+        font-size: 2em;
+        color: #404041;
+        margin: auto; }
+      body .block .output .outputNumber {
+        font-size: 8em;
+        color: #eb008b;
+        margin: auto; }
+      body .block .output .indiceBox {
+        font-size: 2em;
+        margin: auto; }
+    body .block .resetContainer {
+      flex: 1; }
+      body .block .resetContainer .btnReset {
+        margin: auto;
+        width: 48%; }
+
+/*# sourceMappingURL=style.css.map */

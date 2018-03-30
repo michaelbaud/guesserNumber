@@ -1,0 +1,137 @@
+@font-face {
+	font-family: "open_sans_bold";
+	src: url("fonts/OpenSans-Bold.ttf") format("ttf");      
+}
+@font-face {
+	font-family: "open_sans_extra_bold";
+	src: url("fonts/OpenSans-ExtraBold.ttf") format("ttf");      
+}
+@font-face {
+	font-family: "open_sans_light";
+	src: url("fonts/OpenSans-Light.ttf") format("ttf");      
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	scroll-behavior: smooth;
+}
+
+.button {
+	border-radius: 100px;
+	background-color: #929497;
+	border: 1px solid #929497;
+	color: #fff;
+	font-size: 1.5em;
+}
+
+.button:hover {
+	background-color: #eb008b;
+	border: 1px solid #eb008b;
+	color: #fff;
+}
+
+.display {
+	display: flex;
+}
+
+.column {
+	flex-direction: column;
+}
+
+body {
+	text-align: center;
+	header {
+		width: 100%;
+		background-color: #404041;
+		position: fixed;
+		h1 {
+			color: #ed458b;
+			font-size: 4em;
+			font-weight: 500;
+			span {
+				color: #fff;
+				font-weight: 100;
+			}
+		}
+	}
+	.menu {
+		width: 100vw;
+		height: 100vh;
+		padding-top: 10%;
+		background-color: #404041;
+		color: #fff;
+		font-size: 1.5em;
+		a {
+			color: #fff;
+		}
+		.display {
+			flex: 1;
+		}
+		.display:hover {
+			color: #eb008b;
+		}
+		.display h2 {
+			color: #929497;
+		}
+		.display {
+			h2, div {
+				margin: auto;
+			}
+		}
+	}
+	.block {
+		margin-top: 50px;
+		height: 75vh;
+		.inputContainer {
+			flex: 1;
+			input {
+				text-align: center;
+				color: #B8BABC;
+				font-size: 1.5em;
+				border: 2px solid #B8BABC;
+				border-radius: 3px;
+				width: 45%;
+				height: 60%;
+				margin: auto;
+			}
+		}
+		.middleContainer {
+			flex: 1;
+			.btnGuess {
+				margin: auto;
+				margin-right: 20px;
+				width: 20%;
+			}
+			.btnClear {
+				margin: auto;
+				margin-left: 20px;
+				width: 20%;
+			}
+		}
+		.output {
+			flex: 5;
+			.beforeOutputNumber {
+				font-size: 2em;
+				color: #404041;
+				margin: auto;
+			}
+			.outputNumber {
+				font-size: 8em;
+				color: #eb008b;
+				margin: auto;
+			}
+			.indiceBox {
+				font-size: 2em;
+				margin: auto;
+			}
+		}
+		.resetContainer {
+			flex: 1;
+			.btnReset {
+				margin: auto;
+				width: 48%;
+			}
+		}
+	}
+}
