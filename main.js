@@ -19,7 +19,7 @@ var random = 0;
 var inputBox = document.querySelector('.inputBox');
 
 btnReset.onclick = function() {
-	
+
 }
 
 btnClear.onclick = function() {
@@ -69,13 +69,13 @@ level5Box.onclick = function() {
 function randomNumber(min, max) {
 	var nb = min + (max-min+1)*Math.random();
     random = Math.floor(nb);
-}22
+}
 
-btnGuess.addEventListener('click', function() {
-		
+function game() {
+
 	var input = parseInt(inputBox.value);
 	var lastGuessBox = document.querySelector('.lastGuessBox');
-	
+
 	if(input >= debutRange && input <= finRange) {
 		outputNumber.style.fontSize = '8em';
 		lastGuessBox.textContent = lastGuess;
@@ -94,8 +94,15 @@ btnGuess.addEventListener('click', function() {
 	else {
 		outputNumber.style.fontSize = '2em';
 		outputNumber.textContent = 'Your guess is outside of the range';
-	}	
+	}
+}
+
+btnGuess.addEventListener('click', function() {
+	game();
 })
 
-
-
+inputBox.addEventListener('keydown', function(e) {
+   if(e.keyCode == 13) {
+		 game();
+	 }
+});
